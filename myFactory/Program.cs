@@ -6,10 +6,30 @@ using System.Threading.Tasks;
 
 namespace myFactory
 {
-    class Program
+    public class myFactory
     {
-        static void Main(string[] args)
+        Dictionary<Type, object> objects;
+
+        private myFactory()
         {
+            objects = new Dictionary<Type, object>();
+
+            AddRoute(typeof(IList<int>), new List<int>());
         }
+        public void AddRoute(Type _interface, object _object)
+        {
+            objects.Add(_interface, _object);
+        }
+
+        public T getRoute<T>()
+        {
+            object o;
+            objects.TryGetValue(typeof(T), out o);
+
+            return (T)o;
+        }
+
     }
+
+
 }
