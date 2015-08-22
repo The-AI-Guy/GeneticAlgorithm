@@ -15,8 +15,9 @@ namespace ConsoleApplication6
         {
             int aSize = 100;
             int iSize = 100;
+            double mutationRate = 0.1;
 
-            GA<float> test = new FloatGA(createDataSet<float>(aSize, iSize), new myBreeder<float>());
+            GA<float> test = new FloatGA(createDataSet<float>(aSize, iSize), new myBreeder<float>(), mutationRate);
 
             DirectoryInfo di = new DirectoryInfo(@"C:\");
             di.GetFiles().First(f => f.Name == "GAOutput").Delete();

@@ -10,9 +10,10 @@ namespace GeneticAlgorithm
 {
     public class FloatGA : GA<float>
     {
-        IBreeder<float> breeder;
+        private IBreeder<float> breeder;
+        private float MutationRate {get;set;}
 
-        public FloatGA(IDataSet<float>[] ds, IBreeder<float> _breeder)
+        public FloatGA(IDataSet<float>[] ds, IBreeder<float> _breeder, double mutationRate)
             : base(ds)
         {
             breeder = _breeder;
@@ -86,7 +87,7 @@ namespace GeneticAlgorithm
 
         public override IDataSet<float> mutate(IDataSet<float> child)
         {
-            if(r.NextDouble() < 0.1 )
+            if(r.NextDouble() < MutationRate )
             {
                 int index = r.Next(data[0].Length());
 
