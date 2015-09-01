@@ -1,0 +1,8 @@
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myGeneticAlgorithm\obj\Debug\myGeneticAlgorithm.csprojResolveAssemblyReference.cache
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myGeneticAlgorithm\bin\Debug\myGeneticAlgorithm.dll.config
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myGeneticAlgorithm\bin\Debug\myGeneticAlgorithm.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myGeneticAlgorithm\bin\Debug\myGeneticAlgorithm.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myGeneticAlgorithm\bin\Debug\Interfaces.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myGeneticAlgorithm\bin\Debug\Interfaces.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myGeneticAlgorithm\obj\Debug\myGeneticAlgorithm.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myGeneticAlgorithm\obj\Debug\myGeneticAlgorithm.pdb

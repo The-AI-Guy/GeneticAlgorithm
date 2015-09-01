@@ -13,6 +13,7 @@ namespace Interfaces
         
         void AddItem(IDataItem<T> item);
         void SetValue(T value, int index);
+        void CreateItems(int size);
 
         int Length();
     }

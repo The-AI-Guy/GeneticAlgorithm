@@ -1,0 +1,16 @@
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\myFactory\bin\Debug\myFactory.dll.config
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\myFactory\bin\Debug\myFactory.dll
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\myFactory\bin\Debug\myFactory.pdb
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\myFactory\obj\Debug\myFactory.csprojResolveAssemblyReference.cache
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\myFactory\obj\Debug\myFactory.dll
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\myFactory\obj\Debug\myFactory.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\obj\Debug\myFactory.csprojResolveAssemblyReference.cache
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\obj\Debug\myFactory.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\obj\Debug\myFactory.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\bin\Debug\myFactory.dll.config
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\bin\Debug\myFactory.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\bin\Debug\myFactory.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\bin\Debug\Interfaces.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\bin\Debug\myGeneticAlgorithm.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\bin\Debug\Interfaces.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\myFactory\bin\Debug\myGeneticAlgorithm.pdb

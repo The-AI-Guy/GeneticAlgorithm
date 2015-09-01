@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Interfaces;
 
-namespace ConsoleApplication6
+namespace myGeneticAlgorithm
 {
     public class myDataSet<T> : IDataSet<T>
     {
@@ -44,6 +44,11 @@ namespace ConsoleApplication6
         public void AddItem(IDataItem<T> item)
         {
             data.Add(item);
+        }
+
+        public void CreateItems(int size)
+        {
+            InitData(size);
         }
 
         public IList<IDataItem<T>> GetItems()

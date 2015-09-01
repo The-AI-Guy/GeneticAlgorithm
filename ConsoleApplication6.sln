@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication6", "ConsoleApplication6\ConsoleApplication6.csproj", "{151ED339-D595-41A1-BDB8-7DA5A3BF6A34}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{36583AA7-1E96-4045-A20B-2E37F9AD791D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myFactory", "myFactory\myFactory.csproj", "{F6906AB7-C3D7-47B5-9350-484E8BB4F009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myGeneticAlgorithm", "myGeneticAlgorithm\myGeneticAlgorithm.csproj", "{6597EFB1-B36F-4D09-916F-CDF090C49E61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F6906AB7-C3D7-47B5-9350-484E8BB4F009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6906AB7-C3D7-47B5-9350-484E8BB4F009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6906AB7-C3D7-47B5-9350-484E8BB4F009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6597EFB1-B36F-4D09-916F-CDF090C49E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6597EFB1-B36F-4D09-916F-CDF090C49E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6597EFB1-B36F-4D09-916F-CDF090C49E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6597EFB1-B36F-4D09-916F-CDF090C49E61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

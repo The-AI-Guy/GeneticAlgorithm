@@ -1,0 +1,12 @@
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\Interfaces\bin\Debug\Interfaces.dll.config
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\mrobinson3\Documents\Visual Studio 2013\Projects\ConsoleApplication6\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\Interfaces\bin\Debug\Interfaces.dll.config
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\Interfaces\obj\Debug\Interfaces.pdb

@@ -41,9 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="myBreeder.cs" />
-    <Compile Include="myDataItem.cs" />
-    <Compile Include="myDataSet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +55,10 @@
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{36583aa7-1e96-4045-a20b-2e37f9ad791d}</Project>
       <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myFactory\myFactory.csproj">
+      <Project>{f6906ab7-c3d7-47b5-9350-484e8bb4f009}</Project>
+      <Name>myFactory</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
