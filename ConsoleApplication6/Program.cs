@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Interfaces;
 using System.IO;
 using myFactory;
+using Parsers;
 
 namespace ConsoleApplication6
 {
@@ -14,12 +15,39 @@ namespace ConsoleApplication6
     {
         static void Main(string[] args)
         {
+            Factory.init();
             //testGA();
-            testFactory();
-
+            //testFactory();
+            TestFileGA();
 
             //wait
             Console.ReadLine();
+        }
+
+        public static void TestFileGA()
+        {
+            int pSize = 1000;
+            double mutationRate = 0.05;
+
+
+
+            IDataSet<string[]>[] ds = new IDataSet<string[]>[pSize];
+
+            for(int i = 0; i < pSize; i++)
+            {
+                ds[i] = Factory.getObject<IDataSet<string[]>>();
+            }
+
+            IParser parser = new CSVParser();
+
+            AccidentGA ga = new AccidentGA(ds, null, mutationRate, @"C:\Users\matt\Documents\GitHub\GeneticAlgorithm\Data\accidents2014.csv", parser);
+
+            for (int i = 0; i < 1000; i++)
+            {
+                ga.Run();
+                if (i % 10000 == 0)
+                    Console.WriteLine(i);
+            }
         }
 
         public static void testGA()
@@ -28,7 +56,7 @@ namespace ConsoleApplication6
             int iSize = 100;
             double mutationRate = 0.1;
 
-            GA<float> test = new FloatGA(createDataSet<float>(aSize, iSize), Factory.getRoute<IBreeder<float>>(), mutationRate);
+            GA<float> test = new FloatGA(createDataSet<float>(aSize, iSize), Factory.getObject<IBreeder<float>>(), mutationRate);
 
             DirectoryInfo di = new DirectoryInfo(@"C:\");
 
@@ -52,6 +80,11 @@ namespace ConsoleApplication6
             
         }
 
+        public static void TestParser()
+        {
+            StreamReader sr = new StreamReader(@"C:\Users\matt\Documents\GitHub\GeneticAlgorithm\Data\accidents2014.csv");
+        }
+
         public static IDataSet<T>[] createDataSet<T>(int aSize, int iSize)
         {
             IDataSet<T> [] temp = new IDataSet<T>[aSize];
@@ -59,7 +92,7 @@ namespace ConsoleApplication6
 
             for(int i = 0; i < aSize; i++)
             {
-                temp[i] = Factory.getRoute<IDataSet<T>>();
+                temp[i] = Factory.getObject<IDataSet<T>>();
                 temp[i].CreateItems(iSize);
 
                 for (int j = 0; j < iSize; j++ )
@@ -71,8 +104,11 @@ namespace ConsoleApplication6
         public static void testFactory()
         {
             Factory.init();
-            List<int> test = (List<int>)Factory.getRoute<IList<int>>();
+            List<int> test1 = (List<int>)Factory.getObject<IList<int>>();
+            IDataSet<int> test2 = Factory.getObject<IDataSet<int>>();
+            IDataItem<int> test3 = Factory.getObject<IDataItem<int>>();
         }
 
     }
 }
+;

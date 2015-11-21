@@ -14,3 +14,7 @@ C:\Users\matt\Documents\GitHub\GeneticAlgorithm\GA\bin\Debug\Interfaces.pdb
 C:\Users\matt\Documents\GitHub\GeneticAlgorithm\GA\obj\Debug\GeneticAlgorithm.csprojResolveAssemblyReference.cache
 C:\Users\matt\Documents\GitHub\GeneticAlgorithm\GA\obj\Debug\GA.dll
 C:\Users\matt\Documents\GitHub\GeneticAlgorithm\GA\obj\Debug\GA.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\GA\bin\Debug\myFactory.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\GA\bin\Debug\myGeneticAlgorithm.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\GA\bin\Debug\myFactory.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\GA\bin\Debug\myGeneticAlgorithm.pdb

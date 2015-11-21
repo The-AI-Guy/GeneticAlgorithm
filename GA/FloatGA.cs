@@ -10,11 +10,9 @@ namespace GeneticAlgorithm
 {
     public class FloatGA : GA<float>
     {
-        private IBreeder<float> breeder;
-        private float MutationRate {get;set;}
-
+        
         public FloatGA(IDataSet<float>[] ds, IBreeder<float> _breeder, double mutationRate)
-            : base(ds)
+            : base(ds,_breeder, mutationRate)
         {
             breeder = _breeder;
         }
@@ -49,45 +47,9 @@ namespace GeneticAlgorithm
             return winners;
         }
 
-        public override void Breed(IDataSet<float>[] winners)
-        {
-            int last = 0;
-
-            for(int i = 0; i < winners.Length; i+=2)
-            {
-                IDataSet<float> p1 = winners[i];
-                IDataSet<float> p2 = winners[i + 1];
-
-                IDataSet<float> c1 = breeder.CreateChild(p1, p2);
-                IDataSet<float> c2 = breeder.CreateChild(p2, p1);
-
-                last = AssignChild(c1, winners, last);
-                last = AssignChild(c2, winners, last);
-            }
-        }
-
-        private int AssignChild(IDataSet<float> child, IDataSet<float>[] winners, int last)
-        {
-            int lastloser = last;
-
-            for (int i = last; i < data.Length; i++ )
-            {
-                if (winners.Contains(data[i]))
-                    continue;
-                else
-                {
-                    data[i] = mutate(child);
-                    lastloser = i + 1;
-                    break;
-                }
-            }
-
-            return lastloser;
-        }
-
         public override IDataSet<float> mutate(IDataSet<float> child)
         {
-            if(r.NextDouble() < MutationRate )
+            if(r.NextDouble() < mutationRate )
             {
                 int index = r.Next(data[0].Length());
 

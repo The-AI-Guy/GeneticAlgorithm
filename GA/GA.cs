@@ -11,10 +11,17 @@ namespace GeneticAlgorithm
     {
         protected Random r;
         protected IDataSet<T> [] data;
+        protected IBreeder<T> breeder;
+        protected double mutationRate;
 
-        public GA(IDataSet<T>[] ds)
+        public GA(IDataSet<T>[] ds, IBreeder<T> _breeder, double _mutationRate)
         {
             data = ds;
+            breeder = _breeder;
+            mutationRate = _mutationRate;
+
+            myFactory.Factory.init();
+
             r = new Random(DateTime.Now.Millisecond);
         }
 
@@ -50,16 +57,52 @@ namespace GeneticAlgorithm
 
         public void Run()
         {
-            //Print();            
+            Print();            
             Breed(Evaluate());
             Shuffle();
-            Print();
+            //Print();
         }
 
         public abstract void Print();
         public abstract IDataSet<T>[] Evaluate();
-        public abstract void Breed(IDataSet<T>[] winners);
+        
         public abstract IDataSet<T> mutate(IDataSet<T> child);
+
+        public virtual void Breed(IDataSet<T>[] winners)
+        {
+            int last = 0;
+
+            for (int i = 0; i < winners.Length; i += 2)
+            {
+                IDataSet<T> p1 = winners[i];
+                IDataSet<T> p2 = winners[i + 1];
+
+                IDataSet<T> c1 = breeder.CreateChild(p1, p2);
+                IDataSet<T> c2 = breeder.CreateChild(p2, p1);
+
+                last = AssignChild(c1, winners, last);
+                last = AssignChild(c2, winners, last);
+            }
+        }
+
+        protected int AssignChild(IDataSet<T> child, IDataSet<T>[] winners, int last)
+        {
+            int lastloser = last;
+
+            for (int i = last; i < data.Length; i++)
+            {
+                if (winners.Contains(data[i]))
+                    continue;
+                else
+                {
+                    data[i] = mutate(child);
+                    lastloser = i + 1;
+                    break;
+                }
+            }
+
+            return lastloser;
+        }
 
     }
 }

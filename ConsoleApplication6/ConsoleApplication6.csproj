@@ -60,6 +60,10 @@
       <Project>{f6906ab7-c3d7-47b5-9350-484e8bb4f009}</Project>
       <Name>myFactory</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Parsers\Parsers.csproj">
+      <Project>{c8178bd7-9ca6-4d8a-aa76-a8420d896ee2}</Project>
+      <Name>Parsers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

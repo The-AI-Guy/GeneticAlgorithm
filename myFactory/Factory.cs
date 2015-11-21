@@ -15,9 +15,12 @@ namespace myFactory
 
         public static void init()
         {
-            hasBeenInit = true;
-            objects = new Dictionary<Type, Type>();
-            AddRoutes();
+            if (!hasBeenInit)
+            {
+                hasBeenInit = true;
+                objects = new Dictionary<Type, Type>();
+                AddRoutes();
+            }
         }
 
         private static void AddRoutes()
@@ -37,7 +40,7 @@ namespace myFactory
         }
 
 
-        public static T getRoute<T>()
+        public static T getObject<T>()
         {
             if (hasBeenInit)
             {

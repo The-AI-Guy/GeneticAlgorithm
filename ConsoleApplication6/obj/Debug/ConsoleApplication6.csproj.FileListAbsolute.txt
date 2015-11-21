@@ -22,3 +22,5 @@ C:\Users\matt\Documents\GitHub\GeneticAlgorithm\ConsoleApplication6\bin\Debug\my
 C:\Users\matt\Documents\GitHub\GeneticAlgorithm\ConsoleApplication6\bin\Debug\myFactory.pdb
 C:\Users\matt\Documents\GitHub\GeneticAlgorithm\ConsoleApplication6\bin\Debug\myGeneticAlgorithm.dll
 C:\Users\matt\Documents\GitHub\GeneticAlgorithm\ConsoleApplication6\bin\Debug\myGeneticAlgorithm.pdb
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\ConsoleApplication6\bin\Debug\Parsers.dll
+C:\Users\matt\Documents\GitHub\GeneticAlgorithm\ConsoleApplication6\bin\Debug\Parsers.pdb

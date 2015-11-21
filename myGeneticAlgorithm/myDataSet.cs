@@ -11,6 +11,11 @@ namespace myGeneticAlgorithm
     {
         public List<IDataItem<T>> data { get; set; }
 
+        public myDataSet()
+        {
+            data = new List<IDataItem<T>>();
+        }
+
         public myDataSet(int size)
         {
             data = new List<IDataItem<T>>();

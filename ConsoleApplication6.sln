@@ -13,6 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myFactory", "myFactory\myFa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myGeneticAlgorithm", "myGeneticAlgorithm\myGeneticAlgorithm.csproj", "{6597EFB1-B36F-4D09-916F-CDF090C49E61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parsers", "Parsers\Parsers.csproj", "{C8178BD7-9CA6-4D8A-AA76-A8420D896EE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{509D0D5F-C935-4B50-9636-CAD6A6378AB0}"
+	ProjectSection(SolutionItems) = preProject
+		Data\accidents2014.csv = Data\accidents2014.csv
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Breeders", "Breeders\Breeders.csproj", "{D098F0C2-BD5D-46D1-A27B-DB0CEA88AB88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +48,14 @@ Global
 		{6597EFB1-B36F-4D09-916F-CDF090C49E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6597EFB1-B36F-4D09-916F-CDF090C49E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6597EFB1-B36F-4D09-916F-CDF090C49E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8178BD7-9CA6-4D8A-AA76-A8420D896EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8178BD7-9CA6-4D8A-AA76-A8420D896EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8178BD7-9CA6-4D8A-AA76-A8420D896EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8178BD7-9CA6-4D8A-AA76-A8420D896EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D098F0C2-BD5D-46D1-A27B-DB0CEA88AB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D098F0C2-BD5D-46D1-A27B-DB0CEA88AB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D098F0C2-BD5D-46D1-A27B-DB0CEA88AB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D098F0C2-BD5D-46D1-A27B-DB0CEA88AB88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

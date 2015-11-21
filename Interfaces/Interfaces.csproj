@@ -47,6 +47,7 @@
     <Compile Include="IBreeder.cs" />
     <Compile Include="IDataItem.cs" />
     <Compile Include="IDataSet.cs" />
+    <Compile Include="IParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
